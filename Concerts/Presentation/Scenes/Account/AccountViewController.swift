@@ -7,14 +7,14 @@
 
 import UIKit
 
-class AccountViewController: UIViewController {
+final class AccountViewController: UIViewController {
     
     private var itemsInSections: Array<Array<AccountItem>> = [
         [.textField(.username), .textField(.name), .textField(.lastname), .textField(.email), .textField(.address)],
         [.appearance, .logout]
     ]
     
-    typealias Section = AccountSection
+    private typealias Section = AccountSection
     
     private var sections: Array<Section> = [.profile, .settings]
     
