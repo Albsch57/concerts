@@ -71,6 +71,12 @@ extension AccountViewController {
                     window.overrideUserInterfaceStyle = .light
                 }
             }
+        } else {
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+                windowScene.windows.forEach { window in
+                    window.overrideUserInterfaceStyle = .dark
+                }
+            }
         }
     }
 }
