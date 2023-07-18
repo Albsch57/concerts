@@ -66,12 +66,15 @@ extension AccountViewController {
     @objc
     private func segmentValueChange(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
-            UIApplication.shared.windows.forEach { window in
-                <#code#>
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+                windowScene.windows.forEach { window in
+                    window.overrideUserInterfaceStyle = .light
+                }
             }
         }
     }
 }
+
 
 
 extension AccountViewController: UITableViewDataSource {
@@ -87,7 +90,7 @@ extension AccountViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-   
+        
         let item = itemsInSections[indexPath.section][indexPath.row]
         if case .textField(let textField) = item {
             let cell = tableView.dequeueReusableCell(withIdentifier: AccountTableViewCell.reuseId, for: indexPath) as! AccountTableViewCell
