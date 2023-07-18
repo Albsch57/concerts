@@ -51,9 +51,9 @@ extension AccountViewController {
         let segment = UISegmentedControl()
         segment.insertSegment(withTitle: "Light", at: 0, animated: false)
         segment.insertSegment(withTitle: "Dark", at: 1, animated: false)
-        segment.selectedSegmentIndex = 0
-        segment.backgroundColor = .white
-        segment.selectedSegmentTintColor = .blue
+        segment.selectedSegmentIndex = 1
+        segment.backgroundColor = .gray
+        segment.selectedSegmentTintColor = .darkGray
         segment.translatesAutoresizingMaskIntoConstraints = false
         let segmentWidth: CGFloat = 180
         let segmentHeight: CGFloat = 30
