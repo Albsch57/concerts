@@ -7,14 +7,14 @@
 
 import UIKit
 
-class AccountViewController: UIViewController {
+final class AccountViewController: UIViewController {
     
     private var itemsInSections: Array<Array<AccountItem>> = [
         [.textField(.username), .textField(.name), .textField(.lastname), .textField(.email), .textField(.address)],
         [.appearance, .logout]
     ]
     
-    typealias Section = AccountSection
+    private typealias Section = AccountSection
     
     private var sections: Array<Section> = [.profile, .settings]
     
@@ -51,10 +51,9 @@ extension AccountViewController {
         let segment = UISegmentedControl()
         segment.insertSegment(withTitle: "Light", at: 0, animated: false)
         segment.insertSegment(withTitle: "Dark", at: 1, animated: false)
-        segment.selectedSegmentIndex = 0
-        segment.backgroundColor = .white
-        segment.selectedSegmentTintColor = .blue
-        segment.translatesAutoresizingMaskIntoConstraints = false
+        segment.selectedSegmentIndex = 1
+        segment.backgroundColor = .gray
+        segment.selectedSegmentTintColor = .darkGray
         let segmentWidth: CGFloat = 180
         let segmentHeight: CGFloat = 30
         segment.frame = CGRect(x: 0, y: 0, width: segmentWidth, height: segmentHeight)
