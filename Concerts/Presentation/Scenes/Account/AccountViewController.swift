@@ -54,7 +54,6 @@ extension AccountViewController {
         segment.selectedSegmentIndex = 1
         segment.backgroundColor = .gray
         segment.selectedSegmentTintColor = .darkGray
-        segment.translatesAutoresizingMaskIntoConstraints = false
         let segmentWidth: CGFloat = 180
         let segmentHeight: CGFloat = 30
         segment.frame = CGRect(x: 0, y: 0, width: segmentWidth, height: segmentHeight)
