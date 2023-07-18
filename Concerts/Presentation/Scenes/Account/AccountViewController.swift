@@ -51,14 +51,25 @@ extension AccountViewController {
         let segment = UISegmentedControl()
         segment.insertSegment(withTitle: "Light", at: 0, animated: false)
         segment.insertSegment(withTitle: "Dark", at: 1, animated: false)
-        segment.selectedSegmentIndex = 1
-        segment.backgroundColor = .gray
-        segment.selectedSegmentTintColor = .darkGray
+        segment.selectedSegmentIndex = 0
+        segment.backgroundColor = .white
+        segment.selectedSegmentTintColor = .blue
         segment.translatesAutoresizingMaskIntoConstraints = false
         let segmentWidth: CGFloat = 180
         let segmentHeight: CGFloat = 30
         segment.frame = CGRect(x: 0, y: 0, width: segmentWidth, height: segmentHeight)
+        
+        segment.addTarget(self, action: #selector(segmentValueChange(_:)), for: .touchUpInside)
         return segment
+    }
+    
+    @objc
+    private func segmentValueChange(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            UIApplication.shared.windows.forEach { window in
+                <#code#>
+            }
+        }
     }
 }
 
