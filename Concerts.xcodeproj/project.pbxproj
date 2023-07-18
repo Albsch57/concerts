@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		420A23062A4DB17A00F9E197 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420A23052A4DB17A00F9E197 /* AccountViewController.swift */; };
+		420A230A2A4DB1C900F9E197 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420A23092A4DB1C900F9E197 /* AccountTableViewCell.swift */; };
+		420A230D2A4DB4C200F9E197 /* AccountItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420A230C2A4DB4C200F9E197 /* AccountItem.swift */; };
+		420A230F2A4DB64200F9E197 /* AccountSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420A230E2A4DB64200F9E197 /* AccountSection.swift */; };
+		4211B97A2A40A343007B2D6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9792A40A343007B2D6A /* AppDelegate.swift */; };
+		4211B97C2A40A343007B2D6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B97B2A40A343007B2D6A /* SceneDelegate.swift */; };
+		4211B97E2A40A343007B2D6A /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B97D2A40A343007B2D6A /* DiscoverViewController.swift */; };
+		4211B9842A40A343007B2D6A /* Concerts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9822A40A343007B2D6A /* Concerts.xcdatamodeld */; };
+		4211B9862A40A345007B2D6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4211B9852A40A345007B2D6A /* Assets.xcassets */; };
+		4211B9892A40A345007B2D6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4211B9872A40A345007B2D6A /* LaunchScreen.storyboard */; };
+		4211B99D2A40A7EF007B2D6A /* ConcertRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B99C2A40A7EF007B2D6A /* ConcertRepository.swift */; };
+		4211B9B32A40AB9E007B2D6A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9B22A40AB9E007B2D6A /* Constants.swift */; };
+		4211B9B52A40AC7C007B2D6A /* SongerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9B42A40AC7C007B2D6A /* SongerRepository.swift */; };
+		4211B9B72A40ACE2007B2D6A /* ConcertUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9B62A40ACE2007B2D6A /* ConcertUseCase.swift */; };
+		4211B9BA2A40ADB1007B2D6A /* UserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9B92A40ADB1007B2D6A /* UserUseCase.swift */; };
+		4211B9BC2A40B0FB007B2D6A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9BB2A40B0FB007B2D6A /* ViewModel.swift */; };
+		4211B9C12A40B18B007B2D6A /* DiscoverSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9C02A40B18B007B2D6A /* DiscoverSection.swift */; };
+		4211B9D52A40B34D007B2D6A /* Songer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9CD2A40B34D007B2D6A /* Songer+CoreDataClass.swift */; };
+		4211B9D62A40B34D007B2D6A /* Songer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9CE2A40B34D007B2D6A /* Songer+CoreDataProperties.swift */; };
+		4211B9D72A40B34D007B2D6A /* Ticket+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9CF2A40B34D007B2D6A /* Ticket+CoreDataClass.swift */; };
+		4211B9D82A40B34D007B2D6A /* Ticket+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9D02A40B34D007B2D6A /* Ticket+CoreDataProperties.swift */; };
+		4211B9D92A40B34D007B2D6A /* Concert+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9D12A40B34D007B2D6A /* Concert+CoreDataClass.swift */; };
+		4211B9DA2A40B34D007B2D6A /* Concert+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9D22A40B34D007B2D6A /* Concert+CoreDataProperties.swift */; };
+		4211B9DB2A40B34D007B2D6A /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9D32A40B34D007B2D6A /* User+CoreDataClass.swift */; };
+		4211B9DC2A40B34D007B2D6A /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9D42A40B34D007B2D6A /* User+CoreDataProperties.swift */; };
+		4211B9DE2A40B45C007B2D6A /* ConcertRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9DD2A40B45C007B2D6A /* ConcertRepositoryImpl.swift */; };
+		4211B9E22A40B8FB007B2D6A /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9E12A40B8FB007B2D6A /* DiscoverView.swift */; };
+		4211B9E42A42E3F1007B2D6A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9E32A42E3F1007B2D6A /* RegisterView.swift */; };
+		4211B9E72A42E429007B2D6A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9E62A42E429007B2D6A /* RegisterViewController.swift */; };
+		4211B9E92A42E4AE007B2D6A /* RegistrViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9E82A42E4AE007B2D6A /* RegistrViewModel.swift */; };
+		4211B9EB2A4344ED007B2D6A /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9EA2A4344ED007B2D6A /* Extension+String.swift */; };
+		4211B9EE2A4348B9007B2D6A /* Extension+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9ED2A4348B9007B2D6A /* Extension+UIApplication.swift */; };
+		4211B9F02A4349D0007B2D6A /* Extension+AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9EF2A4349D0007B2D6A /* Extension+AppDelegate.swift */; };
+		4211B9F22A434B03007B2D6A /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9F12A434B03007B2D6A /* UseCase.swift */; };
+		4211B9F42A434BCB007B2D6A /* Extension+NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9F32A434BCA007B2D6A /* Extension+NSManagedObjectContext.swift */; };
+		4211B9F62A4353F6007B2D6A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9F52A4353F6007B2D6A /* TabBarViewController.swift */; };
+		4211B9F82A435531007B2D6A /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9F72A435531007B2D6A /* SectionHeader.swift */; };
+		4211B9FB2A435758007B2D6A /* DicoverCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9FA2A435758007B2D6A /* DicoverCollectionViewCell.swift */; };
+		4211B9FD2A4357BB007B2D6A /* ConcertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9FC2A4357BB007B2D6A /* ConcertCollectionViewCell.swift */; };
+		4211BA002A435975007B2D6A /* DiscoverItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211B9FF2A435975007B2D6A /* DiscoverItem.swift */; };
+		421AF1A02A45E7B600E7841C /* Concert.json in Resources */ = {isa = PBXBuildFile; fileRef = 42C8E9B52A45DF7B004148FE /* Concert.json */; };
+		4286E34F2A4C5D6000988392 /* ConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4286E34E2A4C5D6000988392 /* ConditionsViewController.swift */; };
+		42B380982A4AFC020095D6FC /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B380972A4AFC020095D6FC /* TicketViewController.swift */; };
+		42B3809A2A4AFDAF0095D6FC /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B380992A4AFDAF0095D6FC /* TicketView.swift */; };
+		42B3809C2A4AFE4B0095D6FC /* TicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B3809B2A4AFE4B0095D6FC /* TicketViewModel.swift */; };
+		42B3809E2A4B1ACD0095D6FC /* TicketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B3809D2A4B1ACD0095D6FC /* TicketCollectionViewCell.swift */; };
+		42B380A02A4B1E630095D6FC /* ScanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B3809F2A4B1E630095D6FC /* ScanCollectionViewCell.swift */; };
+		42FFCFF32A496B7900073D46 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FFCFF22A496B7900073D46 /* SavedViewController.swift */; };
+		42FFCFF82A49720000073D46 /* SavedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FFCFF72A49720000073D46 /* SavedViewModel.swift */; };
+		42FFCFFA2A4972A600073D46 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FFCFF92A4972A600073D46 /* DetailViewController.swift */; };
+		42FFCFFD2A4972D400073D46 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FFCFFC2A4972D400073D46 /* DetailView.swift */; };
+		42FFCFFF2A49D08000073D46 /* SavedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FFCFFE2A49D08000073D46 /* SavedTableViewCell.swift */; };
+		42FFD0012A49FADB00073D46 /* TicketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FFD0002A49FADB00073D46 /* TicketItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		420A23052A4DB17A00F9E197 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		420A23092A4DB1C900F9E197 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		420A230C2A4DB4C200F9E197 /* AccountItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountItem.swift; sourceTree = "<group>"; };
+		420A230E2A4DB64200F9E197 /* AccountSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSection.swift; sourceTree = "<group>"; };
+		4211B9762A40A343007B2D6A /* Concerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4211B9792A40A343007B2D6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4211B97B2A40A343007B2D6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4211B97D2A40A343007B2D6A /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		4211B9832A40A343007B2D6A /* Concerts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Concerts.xcdatamodel; sourceTree = "<group>"; };
+		4211B9852A40A345007B2D6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4211B9882A40A345007B2D6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4211B98A2A40A345007B2D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4211B99C2A40A7EF007B2D6A /* ConcertRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertRepository.swift; sourceTree = "<group>"; };
+		4211B9B22A40AB9E007B2D6A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4211B9B42A40AC7C007B2D6A /* SongerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongerRepository.swift; sourceTree = "<group>"; };
+		4211B9B62A40ACE2007B2D6A /* ConcertUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertUseCase.swift; sourceTree = "<group>"; };
+		4211B9B92A40ADB1007B2D6A /* UserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUseCase.swift; sourceTree = "<group>"; };
+		4211B9BB2A40B0FB007B2D6A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4211B9C02A40B18B007B2D6A /* DiscoverSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverSection.swift; sourceTree = "<group>"; };
+		4211B9CD2A40B34D007B2D6A /* Songer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Songer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4211B9CE2A40B34D007B2D6A /* Songer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Songer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4211B9CF2A40B34D007B2D6A /* Ticket+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ticket+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4211B9D02A40B34D007B2D6A /* Ticket+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ticket+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4211B9D12A40B34D007B2D6A /* Concert+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Concert+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4211B9D22A40B34D007B2D6A /* Concert+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Concert+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4211B9D32A40B34D007B2D6A /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4211B9D42A40B34D007B2D6A /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4211B9DD2A40B45C007B2D6A /* ConcertRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertRepositoryImpl.swift; sourceTree = "<group>"; };
+		4211B9E12A40B8FB007B2D6A /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		4211B9E32A42E3F1007B2D6A /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		4211B9E62A42E429007B2D6A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		4211B9E82A42E4AE007B2D6A /* RegistrViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrViewModel.swift; sourceTree = "<group>"; };
+		4211B9EA2A4344ED007B2D6A /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		4211B9ED2A4348B9007B2D6A /* Extension+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
+		4211B9EF2A4349D0007B2D6A /* Extension+AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+AppDelegate.swift"; sourceTree = "<group>"; };
+		4211B9F12A434B03007B2D6A /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		4211B9F32A434BCA007B2D6A /* Extension+NSManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSManagedObjectContext.swift"; sourceTree = "<group>"; };
+		4211B9F52A4353F6007B2D6A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		4211B9F72A435531007B2D6A /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		4211B9FA2A435758007B2D6A /* DicoverCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicoverCollectionViewCell.swift; sourceTree = "<group>"; };
+		4211B9FC2A4357BB007B2D6A /* ConcertCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertCollectionViewCell.swift; sourceTree = "<group>"; };
+		4211B9FF2A435975007B2D6A /* DiscoverItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverItem.swift; sourceTree = "<group>"; };
+		4286E34E2A4C5D6000988392 /* ConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionsViewController.swift; sourceTree = "<group>"; };
+		42B380972A4AFC020095D6FC /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		42B380992A4AFDAF0095D6FC /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		42B3809B2A4AFE4B0095D6FC /* TicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewModel.swift; sourceTree = "<group>"; };
+		42B3809D2A4B1ACD0095D6FC /* TicketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCollectionViewCell.swift; sourceTree = "<group>"; };
+		42B3809F2A4B1E630095D6FC /* ScanCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanCollectionViewCell.swift; sourceTree = "<group>"; };
+		42C8E9B52A45DF7B004148FE /* Concert.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Concert.json; sourceTree = "<group>"; };
+		42FFCFF22A496B7900073D46 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		42FFCFF72A49720000073D46 /* SavedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewModel.swift; sourceTree = "<group>"; };
+		42FFCFF92A4972A600073D46 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		42FFCFFC2A4972D400073D46 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		42FFCFFE2A49D08000073D46 /* SavedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTableViewCell.swift; sourceTree = "<group>"; };
+		42FFD0002A49FADB00073D46 /* TicketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4211B9732A40A343007B2D6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		420A23042A4DB12E00F9E197 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				420A23052A4DB17A00F9E197 /* AccountViewController.swift */,
+				420A23092A4DB1C900F9E197 /* AccountTableViewCell.swift */,
+				420A230E2A4DB64200F9E197 /* AccountSection.swift */,
+				420A230C2A4DB4C200F9E197 /* AccountItem.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		4211B96D2A40A343007B2D6A = {
+			isa = PBXGroup;
+			children = (
+				4211B9782A40A343007B2D6A /* Concerts */,
+				4211B9772A40A343007B2D6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4211B9772A40A343007B2D6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4211B9762A40A343007B2D6A /* Concerts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4211B9782A40A343007B2D6A /* Concerts */ = {
+			isa = PBXGroup;
+			children = (
+				4211B9792A40A343007B2D6A /* AppDelegate.swift */,
+				4211B97B2A40A343007B2D6A /* SceneDelegate.swift */,
+				4211B99B2A40A792007B2D6A /* Domain */,
+				4211B9CA2A40B2F1007B2D6A /* Common */,
+				4211B9BF2A40B128007B2D6A /* Presentation */,
+				4211B9E02A40B47D007B2D6A /* Infrastructure */,
+				4211B9852A40A345007B2D6A /* Assets.xcassets */,
+				4211B9872A40A345007B2D6A /* LaunchScreen.storyboard */,
+				4211B98A2A40A345007B2D6A /* Info.plist */,
+				42C8E9B52A45DF7B004148FE /* Concert.json */,
+				4211B9822A40A343007B2D6A /* Concerts.xcdatamodeld */,
+			);
+			path = Concerts;
+			sourceTree = "<group>";
+		};
+		4211B99B2A40A792007B2D6A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4211B9CC2A40B32F007B2D6A /* Entity */,
+				4211B9B82A40ACE8007B2D6A /* UseCase */,
+				4211B99E2A40A7FC007B2D6A /* Repository */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4211B99E2A40A7FC007B2D6A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4211B99C2A40A7EF007B2D6A /* ConcertRepository.swift */,
+				4211B9B42A40AC7C007B2D6A /* SongerRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4211B9B82A40ACE8007B2D6A /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				4211B9B62A40ACE2007B2D6A /* ConcertUseCase.swift */,
+				4211B9B92A40ADB1007B2D6A /* UserUseCase.swift */,
+				4211B9F12A434B03007B2D6A /* UseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		4211B9BD2A40B0FF007B2D6A /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				4211B97D2A40A343007B2D6A /* DiscoverViewController.swift */,
+				4211B9FE2A4357D1007B2D6A /* Views */,
+				4211B9BB2A40B0FB007B2D6A /* ViewModel.swift */,
+				4211B9FF2A435975007B2D6A /* DiscoverItem.swift */,
+				4211B9C02A40B18B007B2D6A /* DiscoverSection.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		4211B9BE2A40B123007B2D6A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				42FFCFFB2A4972AD00073D46 /* Details */,
+				42FFCFF42A496B8100073D46 /* Saved */,
+				4211B9BD2A40B0FF007B2D6A /* Discover */,
+				4211B9E52A42E3F6007B2D6A /* Registration */,
+				42FFD0022A49FD1700073D46 /* Tickets */,
+				420A23042A4DB12E00F9E197 /* Account */,
+				4286E3502A4C5D8200988392 /* Conditions */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4211B9BF2A40B128007B2D6A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4211B9BE2A40B123007B2D6A /* Scenes */,
+				4211B9F92A435541007B2D6A /* Shared */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4211B9CA2A40B2F1007B2D6A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4211B9B22A40AB9E007B2D6A /* Constants.swift */,
+				4211B9EC2A4344F3007B2D6A /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4211B9CC2A40B32F007B2D6A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4211B9CD2A40B34D007B2D6A /* Songer+CoreDataClass.swift */,
+				4211B9CE2A40B34D007B2D6A /* Songer+CoreDataProperties.swift */,
+				4211B9CF2A40B34D007B2D6A /* Ticket+CoreDataClass.swift */,
+				4211B9D02A40B34D007B2D6A /* Ticket+CoreDataProperties.swift */,
+				4211B9D12A40B34D007B2D6A /* Concert+CoreDataClass.swift */,
+				4211B9D22A40B34D007B2D6A /* Concert+CoreDataProperties.swift */,
+				4211B9D32A40B34D007B2D6A /* User+CoreDataClass.swift */,
+				4211B9D42A40B34D007B2D6A /* User+CoreDataProperties.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4211B9DF2A40B462007B2D6A /* Repository+Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				4211B9DD2A40B45C007B2D6A /* ConcertRepositoryImpl.swift */,
+			);
+			path = "Repository+Implementations";
+			sourceTree = "<group>";
+		};
+		4211B9E02A40B47D007B2D6A /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				4211B9DF2A40B462007B2D6A /* Repository+Implementations */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		4211B9E52A42E3F6007B2D6A /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				4211B9E62A42E429007B2D6A /* RegisterViewController.swift */,
+				4211B9E82A42E4AE007B2D6A /* RegistrViewModel.swift */,
+				4211B9E32A42E3F1007B2D6A /* RegisterView.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		4211B9EC2A4344F3007B2D6A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4211B9EA2A4344ED007B2D6A /* Extension+String.swift */,
+				4211B9EF2A4349D0007B2D6A /* Extension+AppDelegate.swift */,
+				4211B9F32A434BCA007B2D6A /* Extension+NSManagedObjectContext.swift */,
+				4211B9ED2A4348B9007B2D6A /* Extension+UIApplication.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4211B9F92A435541007B2D6A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4211B9F52A4353F6007B2D6A /* TabBarViewController.swift */,
+				4211B9F72A435531007B2D6A /* SectionHeader.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4211B9FE2A4357D1007B2D6A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4211B9E12A40B8FB007B2D6A /* DiscoverView.swift */,
+				4211B9FA2A435758007B2D6A /* DicoverCollectionViewCell.swift */,
+				4211B9FC2A4357BB007B2D6A /* ConcertCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4286E3502A4C5D8200988392 /* Conditions */ = {
+			isa = PBXGroup;
+			children = (
+				4286E34E2A4C5D6000988392 /* ConditionsViewController.swift */,
+			);
+			path = Conditions;
+			sourceTree = "<group>";
+		};
+		42B380A12A4B53980095D6FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42B380992A4AFDAF0095D6FC /* TicketView.swift */,
+				42B3809D2A4B1ACD0095D6FC /* TicketCollectionViewCell.swift */,
+				42B3809F2A4B1E630095D6FC /* ScanCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42FFCFF42A496B8100073D46 /* Saved */ = {
+			isa = PBXGroup;
+			children = (
+				42FFCFF22A496B7900073D46 /* SavedViewController.swift */,
+				42FFCFFE2A49D08000073D46 /* SavedTableViewCell.swift */,
+				42FFCFF72A49720000073D46 /* SavedViewModel.swift */,
+			);
+			path = Saved;
+			sourceTree = "<group>";
+		};
+		42FFCFFB2A4972AD00073D46 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				42FFCFF92A4972A600073D46 /* DetailViewController.swift */,
+				42FFCFFC2A4972D400073D46 /* DetailView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		42FFD0022A49FD1700073D46 /* Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				42FFD0002A49FADB00073D46 /* TicketItem.swift */,
+				42B3809B2A4AFE4B0095D6FC /* TicketViewModel.swift */,
+				42B380972A4AFC020095D6FC /* TicketViewController.swift */,
+				42B380A12A4B53980095D6FC /* Views */,
+			);
+			path = Tickets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4211B9752A40A343007B2D6A /* Concerts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4211B98D2A40A345007B2D6A /* Build configuration list for PBXNativeTarget "Concerts" */;
+			buildPhases = (
+				4211B9722A40A343007B2D6A /* Sources */,
+				4211B9732A40A343007B2D6A /* Frameworks */,
+				4211B9742A40A343007B2D6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Concerts;
+			productName = Concerts;
+			productReference = 4211B9762A40A343007B2D6A /* Concerts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4211B96E2A40A343007B2D6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4211B9752A40A343007B2D6A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4211B9712A40A343007B2D6A /* Build configuration list for PBXProject "Concerts" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4211B96D2A40A343007B2D6A;
+			productRefGroup = 4211B9772A40A343007B2D6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4211B9752A40A343007B2D6A /* Concerts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4211B9742A40A343007B2D6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4211B9892A40A345007B2D6A /* LaunchScreen.storyboard in Resources */,
+				421AF1A02A45E7B600E7841C /* Concert.json in Resources */,
+				4211B9862A40A345007B2D6A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4211B9722A40A343007B2D6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4211B9B52A40AC7C007B2D6A /* SongerRepository.swift in Sources */,
+				4211B97E2A40A343007B2D6A /* DiscoverViewController.swift in Sources */,
+				42FFCFFF2A49D08000073D46 /* SavedTableViewCell.swift in Sources */,
+				4211B9EE2A4348B9007B2D6A /* Extension+UIApplication.swift in Sources */,
+				42B3809E2A4B1ACD0095D6FC /* TicketCollectionViewCell.swift in Sources */,
+				4211B9DE2A40B45C007B2D6A /* ConcertRepositoryImpl.swift in Sources */,
+				4211B9F02A4349D0007B2D6A /* Extension+AppDelegate.swift in Sources */,
+				4211B9FD2A4357BB007B2D6A /* ConcertCollectionViewCell.swift in Sources */,
+				4211B97A2A40A343007B2D6A /* AppDelegate.swift in Sources */,
+				42FFCFFD2A4972D400073D46 /* DetailView.swift in Sources */,
+				4211B9D82A40B34D007B2D6A /* Ticket+CoreDataProperties.swift in Sources */,
+				4211B9D52A40B34D007B2D6A /* Songer+CoreDataClass.swift in Sources */,
+				4211B9B72A40ACE2007B2D6A /* ConcertUseCase.swift in Sources */,
+				4211B9B32A40AB9E007B2D6A /* Constants.swift in Sources */,
+				4211BA002A435975007B2D6A /* DiscoverItem.swift in Sources */,
+				4211B9C12A40B18B007B2D6A /* DiscoverSection.swift in Sources */,
+				4211B9D92A40B34D007B2D6A /* Concert+CoreDataClass.swift in Sources */,
+				420A230F2A4DB64200F9E197 /* AccountSection.swift in Sources */,
+				42B3809C2A4AFE4B0095D6FC /* TicketViewModel.swift in Sources */,
+				42B380982A4AFC020095D6FC /* TicketViewController.swift in Sources */,
+				4211B9F42A434BCB007B2D6A /* Extension+NSManagedObjectContext.swift in Sources */,
+				4211B9FB2A435758007B2D6A /* DicoverCollectionViewCell.swift in Sources */,
+				4211B9EB2A4344ED007B2D6A /* Extension+String.swift in Sources */,
+				4211B9842A40A343007B2D6A /* Concerts.xcdatamodeld in Sources */,
+				4211B9E42A42E3F1007B2D6A /* RegisterView.swift in Sources */,
+				4286E34F2A4C5D6000988392 /* ConditionsViewController.swift in Sources */,
+				4211B9F82A435531007B2D6A /* SectionHeader.swift in Sources */,
+				42B380A02A4B1E630095D6FC /* ScanCollectionViewCell.swift in Sources */,
+				4211B9E22A40B8FB007B2D6A /* DiscoverView.swift in Sources */,
+				42B3809A2A4AFDAF0095D6FC /* TicketView.swift in Sources */,
+				4211B9DC2A40B34D007B2D6A /* User+CoreDataProperties.swift in Sources */,
+				4211B9E72A42E429007B2D6A /* RegisterViewController.swift in Sources */,
+				420A23062A4DB17A00F9E197 /* AccountViewController.swift in Sources */,
+				420A230A2A4DB1C900F9E197 /* AccountTableViewCell.swift in Sources */,
+				42FFCFF32A496B7900073D46 /* SavedViewController.swift in Sources */,
+				4211B99D2A40A7EF007B2D6A /* ConcertRepository.swift in Sources */,
+				4211B9BC2A40B0FB007B2D6A /* ViewModel.swift in Sources */,
+				42FFCFF82A49720000073D46 /* SavedViewModel.swift in Sources */,
+				4211B97C2A40A343007B2D6A /* SceneDelegate.swift in Sources */,
+				42FFD0012A49FADB00073D46 /* TicketItem.swift in Sources */,
+				4211B9DA2A40B34D007B2D6A /* Concert+CoreDataProperties.swift in Sources */,
+				42FFCFFA2A4972A600073D46 /* DetailViewController.swift in Sources */,
+				4211B9DB2A40B34D007B2D6A /* User+CoreDataClass.swift in Sources */,
+				4211B9D72A40B34D007B2D6A /* Ticket+CoreDataClass.swift in Sources */,
+				4211B9BA2A40ADB1007B2D6A /* UserUseCase.swift in Sources */,
+				4211B9F22A434B03007B2D6A /* UseCase.swift in Sources */,
+				420A230D2A4DB4C200F9E197 /* AccountItem.swift in Sources */,
+				4211B9E92A42E4AE007B2D6A /* RegistrViewModel.swift in Sources */,
+				4211B9F62A4353F6007B2D6A /* TabBarViewController.swift in Sources */,
+				4211B9D62A40B34D007B2D6A /* Songer+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4211B9872A40A345007B2D6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4211B9882A40A345007B2D6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4211B98B2A40A345007B2D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4211B98C2A40A345007B2D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4211B98E2A40A345007B2D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Concerts/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.concerts.Concerts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4211B98F2A40A345007B2D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Concerts/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.concerts.Concerts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4211B9712A40A343007B2D6A /* Build configuration list for PBXProject "Concerts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4211B98B2A40A345007B2D6A /* Debug */,
+				4211B98C2A40A345007B2D6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4211B98D2A40A345007B2D6A /* Build configuration list for PBXNativeTarget "Concerts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4211B98E2A40A345007B2D6A /* Debug */,
+				4211B98F2A40A345007B2D6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4211B9822A40A343007B2D6A /* Concerts.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4211B9832A40A343007B2D6A /* Concerts.xcdatamodel */,
+			);
+			currentVersion = 4211B9832A40A343007B2D6A /* Concerts.xcdatamodel */;
+			path = Concerts.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4211B96E2A40A343007B2D6A /* Project object */;
+}

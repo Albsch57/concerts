@@ -1,0 +1,200 @@
+[
+    {
+        "offer": "Arctic Monkeys are an English rock band formed in Sheffield in 2002. The group consists of Alex Turner, Jamie Cook, Nick O'Malley and Matt Helders. Arctic Monkeys were heralded as one of the first bands to come to public attention via the Internet. Their debut album, Whatever People Say I Am, That's What I'm Not (2006), became the fastest-selling debut album in UK chart history, and has been hailed as one of the greatest debut albums. It won Best British Album at the 2007 Brit Awards.",
+        "location": "Parc del Forum, Barcelona",
+        "genre": "Jazz",
+        "date": "30-06-2023",
+        "coverPath": "popular1",
+        "isPopular": true,
+        "recommended": false,
+        "priceTicket": "11.99",
+        "songer": {
+            "name": "Arctic Monkeys"
+        }
+    },
+    {
+        "offer": "Bruce Springsteen are an English rock band formed in Sheffield in 2002. The group consists of Alex Turner, Jamie Cook, Nick O'Malley and Matt Helders. Arctic Monkeys were heralded as one of the first bands to come to public attention via the Internet. Their debut album, Whatever People Say I Am, That's What I'm Not (2006), became the fastest-selling debut album in UK chart history, and has been hailed as one of the greatest debut albums. It won Best British Album at the 2007 Brit Awards.",
+        "location": "Parc del Forum, Barcelona",
+        "genre": "Heavy",
+        "date": "30-06-2023",
+        "coverPath": "popular2",
+        "isPopular": true,
+        "recommended": false,
+        "priceTicket": "11.99",
+        "songer": {
+            "name": "Bruce Springsteen"
+        }
+    },
+    {
+        "offer": "Bryan Adams are an English rock band formed in Sheffield in 2002. The group consists of Alex Turner, Jamie Cook, Nick O'Malley and Matt Helders. Arctic Monkeys were heralded as one of the first bands to come to public attention via the Internet. Their debut album, Whatever People Say I Am, That's What I'm Not (2006), became the fastest-selling debut album in UK chart history, and has been hailed as one of the greatest debut albums. It won Best British Album at the 2007 Brit Awards.",
+        "location": "Palau Sant Jordi, Barcelona",
+        "genre": "Electro",
+        "date": "30-06-2023",
+        "coverPath": "popular3",
+        "isPopular": true,
+        "recommended": false,
+        "priceTicket": "11.99",
+        "songer": {
+            "name": "Bryan Adams"
+        }
+    },
+    {
+        "offer": "Indie Air Festival are an English rock band formed in Sheffield in 2002. The group consists of Alex Turner, Jamie Cook, Nick O'Malley and Matt Helders. Arctic Monkeys were heralded as one of the first bands to come to public attention via the Internet. Their debut album, Whatever People Say I Am, That's What I'm Not (2006), became the fastest-selling debut album in UK chart history, and has been hailed as one of the greatest debut albums. It won Best British Album at the 2007 Brit Awards.",
+        "location": "Estadi, Palma de Mallorca",
+        "genre": "Heavy",
+        "date": "30-06-2023",
+        "coverPath": "popular4",
+        "isPopular": true,
+        "recommended": false,
+        "priceTicket": "11.99",
+        "songer": {
+            "name": "Indie Air Festival"
+        }
+    },
+    {
+        "offer": "Neon are an English rock band formed in Sheffield in 2002. The group consists of Alex Turner, Jamie Cook, Nick O'Malley and Matt Helders. Arctic Monkeys were heralded as one of the first bands to come to public attention via the Internet. Their debut album, Whatever People Say I Am, That's What I'm Not (2006), became the fastest-selling debut album in UK chart history, and has been hailed as one of the greatest debut albums. It won Best British Album at the 2007 Brit Awards.",
+        "location": "Sala Apolo, Barcelona",
+        "genre": "Heavy",
+        "date": "30-06-2023",
+        "coverPath": "popular5",
+        "isPopular": true,
+        "recommended": false,
+        "priceTicket": "11.99",
+        "songer": {
+            "name": "Neon"
+        }
+    },
+    {
+        "offer": "Beastie Boys are an English rock band formed in Sheffield in 2002. The group consists of Alex Turner, Jamie Cook, Nick O'Malley and Matt Helders. Arctic Monkeys were heralded as one of the first bands to come to public attention via the Internet. Their debut album, Whatever People Say I Am, That's What I'm Not (2006), became the fastest-selling debut album in UK chart history, and has been hailed as one of the greatest debut albums. It won Best British Album at the 2007 Brit Awards.",
+        "location": "Sala Apolo, Barcelona",
+        "genre": "Heavy",
+        "date": "06-06-2023",
+        "coverPath": "popular6",
+        "isPopular": true,
+        "recommended": false,
+        "priceTicket": "11.99",
+        "songer": {
+            "name": "Beastie Boys"
+        }
+    },
+    
+    
+    {
+        "offer": "Niall Horan are an English rock band formed in Sheffield in 2002. The group consists of Alex Turner, Jamie Cook, Nick O'Malley and Matt Helders. Arctic Monkeys were heralded as one of the first bands to come to public attention via the Internet. Their debut album, Whatever People Say I Am, That's What I'm Not (2006), became the fastest-selling debut album in UK chart history, and has been hailed as one of the greatest debut albums. It won Best British Album at the 2007 Brit Awards.",
+        "location": "Palau Sant Jordi, Barcelona",
+        "genre": "Jazz",
+        "date": "30-07-2023",
+        "coverPath": "nextweek1",
+        "isPopular": false,
+        "recommended": true,
+        "priceTicket": "11.99",
+        "songer": {
+            "name": "Niall Horan"
+        }
+    },
+    {
+        "offer": "Love of Lesbian are an English rock band formed in Sheffield in 2002. The group consists of Alex Turner, Jamie Cook, Nick O'Malley and Matt Helders. Arctic Monkeys were heralded as one of the first bands to come to public attention via the Internet. Their debut album, Whatever People Say I Am, That's What I'm Not (2006), became the fastest-selling debut album in UK chart history, and has been hailed as one of the greatest debut albums. It won Best British Album at the 2007 Brit Awards.",
+        "location": "Palau Sant Jordi, Barcelona",
+        "genre": "Electro",
+        "date": "30-06-2023",
+        "coverPath": "nextweek2",
+        "isPopular": false,
+        "recommended": false,
+        "priceTicket": "11.99",
+        "songer": {
+            "name": "Love of Lesbian"
+        }
+    },
+    {
+        "offer": "Guns N' Roses are an English rock band formed in Sheffield in 2002. The group consists of Alex Turner, Jamie Cook, Nick O'Malley and Matt Helders. Arctic Monkeys were heralded as one of the first bands to come to public attention via the Internet. Their debut album, Whatever People Say I Am, That's What I'm Not (2006), became the fastest-selling debut album in UK chart history, and has been hailed as one of the greatest debut albums. It won Best British Album at the 2007 Brit Awards.",
+        "location": "Estadi Olímpic, Barcelona",
+        "genre": "Jazz",
+        "date": "30-06-2023",
+        "coverPath": "nextweek3",
+        "isPopular": false,
+        "recommended": false,
+        "priceTicket": "11.99",
+        
+        "songer": {
+            "name": "Guns N' Roses"
+        }
+    },
+    {
+        "offer": "Adele are an English rock band formed in Sheffield in 2002. The group consists of Alex Turner, Jamie Cook, Nick O'Malley and Matt Helders. Arctic Monkeys were heralded as one of the first bands to come to public attention via the Internet. Their debut album, Whatever People Say I Am, That's What I'm Not (2006), became the fastest-selling debut album in UK chart history, and has been hailed as one of the greatest debut albums. It won Best British Album at the 2007 Brit Awards.",
+        "location": "Estadi Olímpic, Barcelona",
+        "genre": "Heavy",
+        "date": "30-06-2023",
+        "coverPath": "nextweek4",
+        "isPopular": false,
+        "recommended": true,
+        "priceTicket": "11.99",
+        "songer": {
+            "name": "Adele"
+        }
+    },
+    {
+        "offer": "Green day are an English rock band formed in Sheffield in 2002. The group consists of Alex Turner, Jamie Cook, Nick O'Malley and Matt Helders. Arctic Monkeys were heralded as one of the first bands to come to public attention via the Internet. Their debut album, Whatever People Say I Am, That's What I'm Not (2006), became the fastest-selling debut album in UK chart history, and has been hailed as one of the greatest debut albums. It won Best British Album at the 2007 Brit Awards.",
+        "location": "Estadi Olímpic, Barcelona",
+        "genre": "Jazz",
+        "date": "30-06-2023",
+        "coverPath": "recomended1",
+        "isPopular": false,
+        "recommended": true,
+        "priceTicket": "11.99",
+        "songer": {
+            "name": "Green Day"
+        }
+    },
+    {
+        "offer": "The Killers are an English rock band formed in Sheffield in 2002. The group consists of Alex Turner, Jamie Cook, Nick O'Malley and Matt Helders. Arctic Monkeys were heralded as one of the first bands to come to public attention via the Internet. Their debut album, Whatever People Say I Am, That's What I'm Not (2006), became the fastest-selling debut album in UK chart history, and has been hailed as one of the greatest debut albums. It won Best British Album at the 2007 Brit Awards.",
+        "location": "Sidecar, Barcelona",
+        "genre": "Jazz",
+        "date": "30-06-2023",
+        "coverPath": "recomended2",
+        "isPopular": false,
+        "recommended": true,
+        "priceTicket": "11.99",
+        "songer": {
+            "name": "The Killers"
+        }
+    },
+    {
+        "offer": "Rock festival are an English rock band formed in Sheffield in 2002. The group consists of Alex Turner, Jamie Cook, Nick O'Malley and Matt Helders. Arctic Monkeys were heralded as one of the first bands to come to public attention via the Internet. Their debut album, Whatever People Say I Am, That's What I'm Not (2006), became the fastest-selling debut album in UK chart history, and has been hailed as one of the greatest debut albums. It won Best British Album at the 2007 Brit Awards.",
+        "location": "Sidecar, Barcelona",
+        "genre": "Rock",
+        "date": "30-06-2023",
+        "coverPath": "recomended3",
+        "isPopular": false,
+        "recommended": true,
+        "priceTicket": "11.99",
+        "songer": {
+            "name": "Rock Festival"
+        }
+    },
+    {
+        "offer": "Battle of the Bands are an English rock band formed in Sheffield in 2002. The group consists of Alex Turner, Jamie Cook, Nick O'Malley and Matt Helders. Arctic Monkeys were heralded as one of the first bands to come to public attention via the Internet. Their debut album, Whatever People Say I Am, That's What I'm Not (2006), became the fastest-selling debut album in UK chart history, and has been hailed as one of the greatest debut albums. It won Best British Album at the 2007 Brit Awards.",
+        "location": "Sidecar, Barcelona",
+        "genre": "Jazz",
+        "date": "27-07-2023",
+        "coverPath": "recomended4",
+        "isPopular": false,
+        "recommended": true,
+        "priceTicket": "11.99",
+        "songer": {
+            "name": "Battle of the Bands"
+        }
+    },
+    {
+        "offer": "The Killers are an English rock band formed in Sheffield in 2002. The group consists of Alex Turner, Jamie Cook, Nick O'Malley and Matt Helders. Arctic Monkeys were heralded as one of the first bands to come to public attention via the Internet. Their debut album, Whatever People Say I Am, That's What I'm Not (2006), became the fastest-selling debut album in UK chart history, and has been hailed as one of the greatest debut albums. It won Best British Album at the 2007 Brit Awards.",
+        "location": "Palau Sant Jordi, Barcelona",
+        "genre": "Heave",
+        "date": "30-06-2023",
+        "coverPath": "recomended5",
+        "isPopular": false,
+        "recommended": true,
+        "priceTicket": "11.99",
+        "songer": {
+            "name": "The Killers"
+        }
+    }
+]

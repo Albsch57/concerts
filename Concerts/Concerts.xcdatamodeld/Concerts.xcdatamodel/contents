@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22F66" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Concert" representedClassName="Concert" syncable="YES">
+        <attribute name="coverPath" attributeType="String"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="genre" attributeType="String"/>
+        <attribute name="isPopular" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="location" attributeType="String"/>
+        <attribute name="offer" attributeType="String"/>
+        <attribute name="recommended" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="uuid" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="savedUser" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="User" inverseName="savedConcerts" inverseEntity="User"/>
+        <relationship name="songer" maxCount="1" deletionRule="Nullify" destinationEntity="Songer" inverseName="concerts" inverseEntity="Songer"/>
+        <relationship name="ticket" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ticket" inverseName="concert" inverseEntity="Ticket"/>
+    </entity>
+    <entity name="Songer" representedClassName="Songer" syncable="YES">
+        <attribute name="name" attributeType="String"/>
+        <relationship name="concerts" toMany="YES" deletionRule="No Action" destinationEntity="Concert" inverseName="songer" inverseEntity="Concert"/>
+    </entity>
+    <entity name="Ticket" representedClassName="Ticket" syncable="YES">
+        <attribute name="price" attributeType="Double" defaultValueString="10" usesScalarValueType="YES"/>
+        <attribute name="row" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="seat" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="concert" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Concert" inverseName="ticket" inverseEntity="Concert"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="User" inverseName="tickets" inverseEntity="User"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="password" attributeType="String"/>
+        <attribute name="surname" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <relationship name="savedConcerts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Concert" inverseName="savedUser" inverseEntity="Concert"/>
+        <relationship name="tickets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ticket" inverseName="user" inverseEntity="Ticket"/>
+    </entity>
+</model>
